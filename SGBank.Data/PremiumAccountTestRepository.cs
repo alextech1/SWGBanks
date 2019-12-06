@@ -11,17 +11,30 @@ namespace SGBank.Data
 {
     public class PremiumAccountTestRepository : IAccountRepository
     {
-        private static Account _account = new Account
+        private FileAccountRepository _fileAccountRepository;
+        private Account _account;
+
+        public PremiumAccountTestRepository(FileAccountRepository fileAccountRepository) : base()
         {
-            Name = "Premium Account",
-            Balance = 100M,
-            AccountNumber = "44444",
-            Type = AccountType.Premium
-        };
+            _fileAccountRepository = fileAccountRepository;
+
+            _account = new Account
+            {
+                Name = "Premium Account",
+                Balance = 100M,
+                AccountNumber = "44444",
+                Type = AccountType.Premium
+            };
+
+            StoreAccounts(_account);
+        }
+
+        //private static Account 
 
         public Account LoadAccount(string AccountNumber)
         {
-            if (_account.AccountNumber == AccountNumber)
+            
+            if (_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == AccountNumber))
             {
                 return _account;
             }
@@ -31,7 +44,12 @@ namespace SGBank.Data
 
         public void SaveAccount(Account account)
         {
-            _account = account;
+            _account = account;            
+        } 
+
+        public void StoreAccounts(Account addAccount)
+        {
+            _fileAccountRepository.fileAccounts.Add(addAccount);
         }
     }
 }

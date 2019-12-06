@@ -11,6 +11,18 @@ namespace SGBank.Data
 {
     public class FreeAccountTestRepository : IAccountRepository
     {
+        private FileAccountRepository _fileAccountRepository;
+
+        public FreeAccountTestRepository(FileAccountRepository fileAccountRepository)
+        {
+            _fileAccountRepository = fileAccountRepository;
+        }
+
+        public FreeAccountTestRepository()
+        {
+
+        }
+
         private static Account _account = new Account
         {
             Name = "Free Account",
@@ -21,17 +33,25 @@ namespace SGBank.Data
 
         public Account LoadAccount(string AccountNumber)
         {
+            StoreAccounts(_account);
             if (_account.AccountNumber == AccountNumber)
-            {
+            {                
                 return _account;
             }
-
             return null;
         }
 
         public void SaveAccount(Account account)
         {
             _account = account;
+            
         }
+
+        public void StoreAccounts(Account addAccount)
+        {
+            _fileAccountRepository.fileAccounts.Add(addAccount);
+        }
+
+
     }
 }

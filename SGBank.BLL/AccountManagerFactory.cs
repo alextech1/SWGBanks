@@ -14,17 +14,20 @@ namespace SGBank.BLL
         {
             string mode = ConfigurationManager.AppSettings["Mode"].ToString();
 
-            switch(mode)
+            switch (mode)
             {
                 case "FreeTest":
-                    return new AccountManager(new FreeAccountTestRepository());
+                    return new AccountManager(new FileAccountRepository(mode), new FreeAccountTestRepository());                    
                 case "BasicTest":
-                    return new AccountManager(new BasicAccountTestRepository());
+                    return new AccountManager(new FileAccountRepository(mode), new BasicAccountTestRepository());
                 case "PremiumTest":
-                    return new AccountManager(new PremiumAccountTestRepository());
+                    return new AccountManager(new FileAccountRepository(mode), new PremiumAccountTestRepository());
+
                 default:
                     throw new Exception("Mode value in app config is not valid");
             }
+
+
         }
     }
 }
