@@ -1,4 +1,5 @@
-﻿using SGBank.Data;
+﻿using Autofac;
+using SGBank.Data;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -12,22 +13,32 @@ namespace SGBank.BLL
     {
         public static AccountManager Create()
         {
+            var container = ContainerConfig.Configure();
+
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var app = scope.Resolve<IApplication>();
+                app.Run();
+            }
+
+            return container.Resolve<AccountManager>();
+
+            /*
             string mode = ConfigurationManager.AppSettings["Mode"].ToString();
+            var fileAccount = new FileAccountRepository(mode);
 
             switch (mode)
-            {
+            {              
                 case "FreeTest":
-                    return new AccountManager(new FileAccountRepository(mode), new FreeAccountTestRepository());                    
+                    return new AccountManager(fileAccount, new FreeAccountTestRepository());                    
                 case "BasicTest":
-                    return new AccountManager(new FileAccountRepository(mode), new BasicAccountTestRepository());
+                    return new AccountManager(fileAccount, new BasicAccountTestRepository());
                 case "PremiumTest":
-                    return new AccountManager(new FileAccountRepository(mode), new PremiumAccountTestRepository());
+                    return new AccountManager(fileAccount, new PremiumAccountTestRepository(fileAccount));
 
                 default:
                     throw new Exception("Mode value in app config is not valid");
-            }
-
-
+            }*/
         }
     }
 }

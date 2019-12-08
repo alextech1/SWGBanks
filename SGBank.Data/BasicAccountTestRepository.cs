@@ -12,28 +12,26 @@ namespace SGBank.Data
     public class BasicAccountTestRepository : IAccountRepository
     {
         private FileAccountRepository _fileAccountRepository;
+        private Account _account;
 
         public BasicAccountTestRepository(FileAccountRepository fileAccountRepository)
         {
             _fileAccountRepository = fileAccountRepository;
-        }
 
-        public BasicAccountTestRepository()
-        {
-        }
+            _account = new Account
+            {
+                Name = "Basic Account",
+                Balance = 100M,
+                AccountNumber = "33333",
+                Type = AccountType.Basic
+            };
 
-        private static Account _account = new Account
-        {
-            Name = "Basic Account",
-            Balance = 100M,
-            AccountNumber = "33333",
-            Type = AccountType.Basic
-        };
+            StoreAccounts(_account);
+        }
 
         public Account LoadAccount(string AccountNumber)
         {
-            StoreAccounts(_account);
-            if (_account.AccountNumber == AccountNumber)
+            if (_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == AccountNumber))
             {
                 return _account;
             }

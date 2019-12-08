@@ -19,7 +19,7 @@ namespace SGBank.BLL.WithdrawRules
                 case AccountType.Basic:
                     return new BasicAccountWithdrawRule();
                 case AccountType.Premium:
-                    return new BasicAccountWithdrawRule();
+                    return new PremiumAccountWithdrawRule();
             }
 
             throw new Exception("Account type is not supported!");

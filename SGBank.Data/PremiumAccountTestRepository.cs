@@ -14,7 +14,7 @@ namespace SGBank.Data
         private FileAccountRepository _fileAccountRepository;
         private Account _account;
 
-        public PremiumAccountTestRepository(FileAccountRepository fileAccountRepository) : base()
+        public PremiumAccountTestRepository(FileAccountRepository fileAccountRepository)
         {
             _fileAccountRepository = fileAccountRepository;
 
@@ -29,11 +29,8 @@ namespace SGBank.Data
             StoreAccounts(_account);
         }
 
-        //private static Account 
-
         public Account LoadAccount(string AccountNumber)
         {
-            
             if (_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == AccountNumber))
             {
                 return _account;
@@ -44,7 +41,7 @@ namespace SGBank.Data
 
         public void SaveAccount(Account account)
         {
-            _account = account;            
+            _account = account;
         } 
 
         public void StoreAccounts(Account addAccount)

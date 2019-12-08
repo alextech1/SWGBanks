@@ -14,27 +14,19 @@ namespace SGBank.BLL
     public class AccountManager
     {
         private IAccountRepository _accountRepository;
-        private FileAccountRepository _fileAccountRepository;
 
-        public AccountManager(IAccountRepository accountRepository, FileAccountRepository fileAccountRepository) //IAccountRepository accountRepository, FileAccountRepository fileAccountRepository
+        public AccountManager(IAccountRepository accountRepository)
         {
-            _fileAccountRepository = fileAccountRepository;
             _accountRepository = accountRepository;
-        }
-
-        /*public AccountManager(FileAccountRepository fileAccountRepository)
-        {
-            _fileAccountRepository = fileAccountRepository;
-        }*/
+        }        
 
         public AccountLookupResponse LookupAccount(string accountNumber)
         {
             AccountLookupResponse response = new AccountLookupResponse();
 
-            //response.Account = _accountRepository.LoadAccount(accountNumber);            
-            response.Account = _fileAccountRepository.LoadAccount(accountNumber);            
-
-            if(response == null)
+            response.Account = _accountRepository.LoadAccount(accountNumber);            
+                       
+            if(response.Account == null)
             {
                 response.Success = false;
                 response.Message = $"{accountNumber} is not a valid account.";
@@ -51,8 +43,7 @@ namespace SGBank.BLL
         {
             AccountDepositResponse response = new AccountDepositResponse();
 
-            response.Account = _fileAccountRepository.LoadAccount(accountNumber);
-            //response.Account = _accountRepository.LoadAccount(accountNumber);
+            response.Account = _accountRepository.LoadAccount(accountNumber);
 
             if (response.Account == null)
             {
@@ -70,8 +61,7 @@ namespace SGBank.BLL
 
             if(response.Success)
             {
-                _fileAccountRepository.SaveAccount(response.Account);
-                //_accountRepository.SaveAccount(response.Account);
+                _accountRepository.SaveAccount(response.Account);
             }
 
             return response;
@@ -81,8 +71,7 @@ namespace SGBank.BLL
         {
             AccountWithdrawResponse response = new AccountWithdrawResponse();
 
-            response.Account = _fileAccountRepository.LoadAccount(accountNumber);
-            //response.Account = _accountRepository.LoadAccount(accountNumber);
+            response.Account = _accountRepository.LoadAccount(accountNumber);
 
             if (response.Account == null)
             {
@@ -100,8 +89,7 @@ namespace SGBank.BLL
 
             if(response.Success)
             {
-                _fileAccountRepository.SaveAccount(response.Account);
-                //_accountRepository.SaveAccount(response.Account);
+                _accountRepository.SaveAccount(response.Account);
             }
 
             return response;

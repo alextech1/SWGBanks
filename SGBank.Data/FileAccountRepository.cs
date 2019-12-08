@@ -7,21 +7,18 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Autofac;
 
 namespace SGBank.Data
 {
     public class FileAccountRepository : IAccountRepository
     {
-        //private FreeAccountTestRepository _freeAccountTestRepository;
-        //private BasicAccountTestRepository _basicAccountTestRepository;
-        //private PremiumAccountTestRepository _premiumAccountTestRepository;
-
         public List<Account> fileAccounts = new List<Account>();
 
         public FileAccountRepository(string mode)
         {
             GetUsers(mode);
-        }        
+        }
 
         public void GetUsers(string mode) {            
             var dictionaryOfModes = new Dictionary<string, string>
@@ -31,7 +28,7 @@ namespace SGBank.Data
                 ["PremiumTest"] = "P"
             };
 
-            string path = @"C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SGBank.Data\Accounts.txt";
+            string path = @".\Accounts.txt";
             string[] rows = File.ReadAllLines(path);
 
             for (int i = 1; i < rows.Length; i++)
@@ -45,7 +42,7 @@ namespace SGBank.Data
                     _account.Name = columns[1];
                     _account.Balance = Decimal.Parse(columns[2]);
                     if (columns[3] == "F")
-                    {
+                    {                        
                         _account.Type = AccountType.Free;
                     }
                     else if (columns[3] == "B")
@@ -53,11 +50,10 @@ namespace SGBank.Data
                         _account.Type = AccountType.Basic;
                     }
                     else if (columns[3] == "P")
-                    {
+                    {                        
                         _account.Type = AccountType.Premium;
                     }
 
-                    //fileAccounts.Add(_account);
                     StoreAccounts(_account);
                 }
             }            
@@ -70,7 +66,7 @@ namespace SGBank.Data
 
         public void SaveAccount(Account account)
         {
-            //_account = account;
+            
         }
 
         public void StoreAccounts(Account addAccount)

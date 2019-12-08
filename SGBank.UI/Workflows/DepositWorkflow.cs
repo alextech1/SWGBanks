@@ -19,6 +19,7 @@ namespace SGBank.UI.Workflows
             string accountNumber = Console.ReadLine();
 
             Console.Write("Enter a deposit amount: ");
+
             decimal amount = decimal.Parse(Console.ReadLine());
 
             AccountDepositResponse response = accountManager.Deposit(accountNumber, amount);
@@ -39,7 +40,6 @@ namespace SGBank.UI.Workflows
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
-
         }
     }
 }

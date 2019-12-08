@@ -12,3 +12,37 @@ C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assi
 C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
 C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SGBank.UI\obj\Debug\SGBank.UI.exe
 C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SGBank.UI\obj\Debug\SGBank.UI.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.UI.exe.config
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.UI.exe
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.UI.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\Autofac.dll
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.BLL.dll
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.Data.dll
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.Models.dll
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.BLL.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.Data.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\SGBank.Models.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\Autofac.pdb
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\bin\Debug\Autofac.xml
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\obj\Debug\SGBank.UI.csprojAssemblyReference.cache
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\obj\Debug\SGBank.UI.csproj.CoreCompileInputs.cache
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\obj\Debug\SGBank.UI.exe
+G:\_Work\4.DependencyInjection\Project\SGBank.UI\obj\Debug\SGBank.UI.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.UI.exe.config
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.UI.exe
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.UI.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\Autofac.dll
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.BLL.dll
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.Data.dll
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.Models.dll
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.BLL.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.Data.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\SGBank.Models.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\Autofac.pdb
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\bin\Debug\Autofac.xml
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.csprojAssemblyReference.cache
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.csproj.CoreCompileInputs.cache
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.exe
+C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.pdb
