@@ -26,28 +26,36 @@ namespace SGBank.Data
                 Type = AccountType.Basic
             };
 
-            StoreAccounts(_account);
+            SaveAccount(_account);
         }
 
         public Account LoadAccount(string AccountNumber)
         {
-            if (_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == AccountNumber))
-            {
-                return _account;
-            }
-
-            return null;
+            return _fileAccountRepository.fileAccounts.FirstOrDefault(x => x.AccountNumber == AccountNumber);
         }
 
         public void SaveAccount(Account account)
         {
-            _account = account;
-            
-        }
+            if (!_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == account.AccountNumber))
+            {
+                _fileAccountRepository.fileAccounts.Add(account);
+                string path = @"C:\testfolder\accounts.txt";
+                string[] line = new string[_fileAccountRepository.fileAccounts.Count + 1];
+                line[0] = "AccountNumber,Name,Balance,Type";
 
-        public void StoreAccounts(Account addAccount)
-        {
-            _fileAccountRepository.fileAccounts.Add(addAccount);
+                int i = 1;
+                foreach (var a in _fileAccountRepository.fileAccounts)
+                {
+                    line[i] = a.AccountNumber + "," + a.Name + "," + a.Balance + "," + a.Type.ToString().Substring(0, 1);
+                    i++;
+                }
+
+                File.WriteAllLines(path, line);
+            }
+            else
+            {
+                _account = account;
+            }
         }
     }
 }

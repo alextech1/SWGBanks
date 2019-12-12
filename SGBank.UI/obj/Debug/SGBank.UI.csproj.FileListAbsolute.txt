@@ -46,3 +46,20 @@ C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\P
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.exe
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.UI\obj\Debug\SGBank.UI.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.UI.exe.config
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.UI.exe
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.UI.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\Autofac.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.BLL.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.Data.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.Models.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.BLL.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.Data.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\SGBank.Models.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\Autofac.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\bin\Debug\Autofac.xml
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\obj\Debug\SGBank.UI.csprojAssemblyReference.cache
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\obj\Debug\SGBank.UI.csproj.CoreCompileInputs.cache
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\obj\Debug\SGBank.UI.csproj.CopyComplete
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\obj\Debug\SGBank.UI.exe
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.UI\obj\Debug\SGBank.UI.pdb

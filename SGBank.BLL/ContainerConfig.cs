@@ -20,7 +20,7 @@ namespace SGBank.BLL
             string mode = ConfigurationManager.AppSettings["Mode"].ToString();
 
             builder.RegisterType<Application>().As<IApplication>();
-            builder.RegisterType<FileAccountRepository>().As<FileAccountRepository>().WithParameter("mode", mode);
+            builder.RegisterType<FileAccountRepository>().As<FileAccountRepository>().WithParameter("mode", mode); //name, value
 
             if (mode == "FreeTest")
                 builder.RegisterType<FreeAccountTestRepository>().As<IAccountRepository>();

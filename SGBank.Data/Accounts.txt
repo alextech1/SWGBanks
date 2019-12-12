@@ -1,4 +1,0 @@
-﻿AccountNumber,Name,Balance,Type
-10001,Free Account,100,F
-20002,Basic Account,500,B
-30003,Premium Account,1000,P

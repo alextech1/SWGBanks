@@ -28,3 +28,15 @@ C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\P
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.Data\bin\Debug\Autofac.dll
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.Data\bin\Debug\Autofac.pdb
 C:\Users\cashamerica12345\Documents\Javascipt and C# Notes\DependencyInjection\Project_2019.12.08\SGBank.Data\bin\Debug\Autofac.xml
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\SGBank.Data.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\SGBank.Data.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\Autofac.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\SGBank.Models.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\SGBank.Models.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\Autofac.pdb
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\bin\Debug\Autofac.xml
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\obj\Debug\SGBank.Data.csprojAssemblyReference.cache
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\obj\Debug\SGBank.Data.csproj.CoreCompileInputs.cache
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\obj\Debug\SGBank.Data.csproj.CopyComplete
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\obj\Debug\SGBank.Data.dll
+C:\Users\cashamerica12345\Documents\TheSoftwareGuildWork\BADGE 2\Milestone4\assignment\SGBank\SWGBanks\SGBank.Data\obj\Debug\SGBank.Data.pdb
