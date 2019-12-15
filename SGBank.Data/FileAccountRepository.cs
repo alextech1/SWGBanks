@@ -17,7 +17,7 @@ namespace SGBank.Data
 
         public FileAccountRepository(string mode)
         {
-            GetUsers(mode);            
+            GetUsers(mode);
         }
 
         public void GetUsers(string mode)
@@ -25,7 +25,6 @@ namespace SGBank.Data
             string newpath = @"C:\testfolder\accounts.txt";
             if (!File.Exists(newpath))
             {
-                // Create a file to write to.
                 using (StreamWriter sw = File.CreateText(newpath))
                 {
                     sw.WriteLine("AccountNumber,Name,Balance,Type");
@@ -67,7 +66,6 @@ namespace SGBank.Data
                     {
                         _account.Type = AccountType.Premium;
                     }
-
                     SaveAccount(_account);
                 }
             }
@@ -75,12 +73,28 @@ namespace SGBank.Data
 
         public Account LoadAccount(string AccountNumber)
         {
-            return fileAccounts.FirstOrDefault(x => x.AccountNumber == AccountNumber);
+            return fileAccounts.FirstOrDefault(x => x.AccountNumber == AccountNumber);           
         }
 
         public void SaveAccount(Account account)
-        {            
-            fileAccounts.Add(account);
+        {
+            string path = @"C:\testfolder\accounts.txt";
+            string header = "AccountNumber,Name,Balance,Type";
+
+            if (!fileAccounts.Any(x => x.AccountNumber == account.AccountNumber))
+                fileAccounts.Add(account);
+            else
+            {
+                var existingAccount = fileAccounts.FirstOrDefault(x => x.AccountNumber == account.AccountNumber);
+                existingAccount.Name = account.Name;
+                existingAccount.Balance = account.Balance;
+                existingAccount.Type = account.Type;
+            }
+
+            List<string> accountsToSave = new List<string>() { header };
+            accountsToSave.AddRange(fileAccounts.Select(x => x.ToString()).ToList());
+
+            File.WriteAllLines(path, accountsToSave);
         }
     }
 }

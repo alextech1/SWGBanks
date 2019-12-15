@@ -38,23 +38,12 @@ namespace SGBank.Data
         {
             if (!_fileAccountRepository.fileAccounts.Any(x => x.AccountNumber == account.AccountNumber))
             {
-                _fileAccountRepository.fileAccounts.Add(account);
-                string path = @"C:\testfolder\accounts.txt";
-                string[] line = new string[_fileAccountRepository.fileAccounts.Count + 1];
-                line[0] = "AccountNumber,Name,Balance,Type";
-
-                int i = 1;
-                foreach (var a in _fileAccountRepository.fileAccounts)
-                {
-                    line[i] = a.AccountNumber + "," + a.Name + "," + a.Balance + "," + a.Type.ToString().Substring(0, 1);
-                    i++;
-                }
-
-                File.WriteAllLines(path, line);
+                _fileAccountRepository.SaveAccount(account);
             }
             else
             {
                 _account = account;
+                _fileAccountRepository.SaveAccount(account);
             }
         }
     }
